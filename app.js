@@ -7,8 +7,8 @@ let toggleNav = function() {
     let getSidebarTitle = document.querySelector(".nav-sidebar span");
     let getSidebarLinks = document.querySelectorAll(".nav-sidebar a");
     
-    if(toggleNavStatus === false){
-        getSidebarUI.computedStyleMap.visibility = "visible";
+    if(toggleNavStatus === true){
+        getSidebarUI.computedStyleMap.sidebar = sidebar.open;
     }
 }
 
