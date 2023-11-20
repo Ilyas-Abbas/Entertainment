@@ -21,8 +21,9 @@ a{
 }
 
 .header-main-logo{
-    width: 120px;
+    
     padding: 0 0 0 40px;
+    
      
 }
 
@@ -91,3 +92,66 @@ html::-webkit-scrollbar {
   html::-webkit-scrollbar-track {
     background-color: #5555;
   }
+
+  /*              */
+.side-bar{
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  width: 30%;
+  height: 90%;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.5s;
+  transform: translateX(-100%);
+}
+
+
+#open{
+    transform: translateX(0);
+}
+.side-bar .close{
+    
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: white;
+    border: 2px solid white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+      
+}
+
+.side-bar .close:hover {
+    color: indianred;
+    border-color: indianred;
+}
+
+.side-bar a{
+    color: #eee;
+  text-decoration: none;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 80px;
+  transition: 0.5s;
+}
+.side-bar a:hover{
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.bars:hover{
+  opacity:0.5;
+  cursor: pointer;
+}

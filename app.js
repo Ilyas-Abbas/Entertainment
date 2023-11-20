@@ -1,18 +1,22 @@
-let toggleNavStatus = false;
+let toggler = document.querySelector('img[src="img/bars-solid.svg"]');
+let side = document.querySelector(".side-bar");
+let close = document.querySelector(".close");
 
+toggler.onclick = function () {
+  /*side.idList.add("open"); */
+  side.id = "open";
+};
 
-let toggleNav = function() {
-    let getSidebar = document.querySelector(".nav-sidebar");
-    let getSidebarUI = document.querySelector(".nav-sidebar ul");
-    let getSidebarTitle = document.querySelector(".nav-sidebar span");
-    let getSidebarLinks = document.querySelectorAll(".nav-sidebar a");
-    
-    if(toggleNavStatus === true){
-        getSidebarUI.computedStyleMap.sidebar = sidebar.open;
-    }
-}
+close.onclick = function () {
+  side.id = "";
+};
 
-
+document.onkeyup = function (e) {
+  // console.log(e);
+  if (e.key === "Escape") {
+    side.id = "";
+  }
+};
 
 
 
