@@ -105,7 +105,8 @@ html::-webkit-scrollbar {
   flex-direction: column;
   justify-content: center;
   transition: 0.5s;
-  transform: translateX(-100%);
+  transform: translateX(-200%);
+  min-width: 0;
 }
 
 
